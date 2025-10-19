@@ -152,6 +152,7 @@ export type SocialLinks = {
   mastodon?: string
   bluesky?: string
   linkedin?: string
+  keyoxide?: string
   email?: string
   rss?: boolean
 }

@@ -5,6 +5,7 @@ import IconMastodon from '~/icons/mastodon.svg'
 import IconTwitter from '~/icons/twitter.svg'
 import IconLinkedin from '~/icons/linkedin.svg'
 import IconBluesky from '~/icons/bluesky.svg'
+import IconKeyoxide from '~/icons/keyoxide.svg'
 import IconEmail from '~/icons/email.svg'
 import IconRss from '~/icons/rss.svg'
 
@@ -78,6 +79,19 @@ const { socialLinks } = Astro.props
       >
         <span class="sr-only">Bluesky</span>
         <IconBluesky class="size-7" />
+      </a>
+    )
+  }
+  {
+    socialLinks.keyoxide && (
+      <a
+        href={socialLinks.keyoxide}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="social-link"
+      >
+        <span class="sr-only">Keyoxide</span>
+        <IconKeyoxide class="size-7" />
       </a>
     )
   }
